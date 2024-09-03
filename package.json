@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node  Examples/Modules/app.js"
+    "start": "nodemon Examples/Modules/app.js"
   },
   "author": "ratamranjith",
   "license": "ISC",
@@ -16,5 +16,8 @@
   "keywords": [
     "nodejs",
     "javascript"
-  ]
+  ],
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
