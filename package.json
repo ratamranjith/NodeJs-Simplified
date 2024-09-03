@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-simplified",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node  Examples/Modules/app.js"
+  },
+  "author": "ratamranjith",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "ratamranjith"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ]
+}
