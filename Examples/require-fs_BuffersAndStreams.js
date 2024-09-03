@@ -31,10 +31,14 @@ const server = http.createServer((req, res) => {
             body.push(chunks);
         })
 
+        // 'end' -> will wait for the data to be collected completely
         req.on('end', () => {
             const parsedBody = Buffer.concat(body).toString();
             const message = parsedBody.split('=');
-            fs.writeFileSync('sample.txt', message[1]);
+            fs.writeFileSync('sample.txt', message[1], (err) => {
+                console.log("File Writing completed");
+                if (err) console.log("There is something wrong");
+            });
         })
         res.setHeader('Location', "/");
         res.statusCode = 302;
