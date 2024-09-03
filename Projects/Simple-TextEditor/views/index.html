@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+</head>
+
+<body>
+    <h1>Simple Text Editor</h1>
+    <form method="POST" action="/save">
+        <label for="filename">Filename:</label><br>
+        <input type="text" id="filename" name="filename" required><br><br>
+
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" rows="10" cols="50"></textarea><br><br>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <form method="GET" action="/read">
+        <label for="read-filename">Read Filename:</label><br>
+        <input type="text" id="read-filename" name="filename" required><br><br>
+
+        <button type="submit">Read</button>
+    </form>
+
+    <form method="POST" action="/delete">
+        <label for="delete-filename">Delete Filename:</label><br>
+        <input type="text" id="delete-filename" name="filename" required><br><br>
+
+        <button type="submit">Delete</button>
+    </form>
+</body>
+
+</html>
