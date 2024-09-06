@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Examples/ExpressJs-Examples/simple-server.js"
+    "start": "nodemon Examples/ExpressJs/ExpressJs-Pug-Engine/app.js"
   },
   "author": "ratamranjith",
   "license": "ISC",

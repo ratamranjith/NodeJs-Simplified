@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{docTitle}
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    header
+      nav
+        ul
+          li
+            a(href='index', class=(activePage === 'home' ? 'active' : '')) Home
+          li
+            a(href='about', class=(activePage === 'about' ? 'active' : '')) About
+          li
+            a(href='services', class=(activePage === 'services' ? 'active' : '')) Services
+          li
+            a(href='contact', class=(activePage === 'contact' ? 'active' : '')) Contact
+    
+      block content
+
+    footer
+      p &copy; 2024 Your Name
