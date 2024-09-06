@@ -1,0 +1,16 @@
+<%- include('layout/header.ejs') %>
+   <section id="projects">
+      <div class="content">
+         <h1>Projects</h1>
+         <p>Take a look at some of the projects I've worked on:</p>
+         <% projects.forEach((project)=> { %>
+            <ul>
+               <li>
+                  <%= project.name %>
+               </li>
+            </ul>
+            <% }) %>
+      </div>
+   </section>
+
+   <%- include('layout/footer.ejs') %>
