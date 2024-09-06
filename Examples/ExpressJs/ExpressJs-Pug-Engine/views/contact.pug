@@ -1,0 +1,18 @@
+extends layout/common.pug
+
+block content
+
+   h1 Contact Me
+   section#contact-content
+   h2 Get in Touch
+   form(action='mailto:your-email@example.com', method='POST', enctype='text/plain')
+      .form-group
+         label(for='name') Name:
+         input#name(type='text', name='name', required='')
+      .form-group
+         label(for='email') Email:
+         input#email(type='email', name='email', required='')
+      .form-group
+         label(for='message') Message:
+         textarea#message(name='message', rows='5', required='')
+      button(type='submit') Send

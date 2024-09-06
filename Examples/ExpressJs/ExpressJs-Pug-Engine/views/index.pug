@@ -1,0 +1,22 @@
+extends layout/common.pug
+
+block content
+   h1 Welcome to My Portfolio
+   p Hi, I&apos;m [Your Name], a passionate web developer.
+   section#projects
+   h2 My Projects
+   .project-list
+   if projects.length > 0
+      each project in projects
+         .project
+            h3 #{project.name}
+            p Description of your #{project.name} project goes here.
+            a(href='#') View Project
+   else
+      p No projects available.
+   section#contact
+   h2 Contact Me
+   p
+      | If you&apos;d like to get in touch, feel free to 
+      a(href='mailto:your-email@example.com') email me
+      | .
